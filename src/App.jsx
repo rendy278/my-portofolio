@@ -6,6 +6,7 @@ import Modal from "./components/Modals";
 import { ThemeProvider } from "./hooks/ThemeContext";
 import Skills from "./apps/Skills";
 import Experience from "./apps/Experience";
+import Projects from "./apps/Projects";
 
 const App = () => {
   const [yourname, setYourname] = useState("");
@@ -26,16 +27,17 @@ const App = () => {
   };
 
   return (
-    <ThemeProvider>
-      <main className="overflow-x-hidden">
+    <main className="overflow-x-hidden ">
+      <ThemeProvider>
         <Modal isOpen={isModalOpen} onSubmit={handleNameSubmit} />
         <Header />
         <HeroSection yourname={yourname} />
         <About />
         <Skills />
         <Experience />
-      </main>
-    </ThemeProvider>
+        <Projects />
+      </ThemeProvider>
+    </main>
   );
 };
 

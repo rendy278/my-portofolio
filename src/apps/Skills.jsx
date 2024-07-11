@@ -87,7 +87,7 @@ const Skills = () => {
           </div>
           <Tabs tabs={tabs} />
         </div>
-        <div className="lg:w-[50%] w-full">
+        <div className="lg:w-[50%] w-full ">
           <Github />
           <div className="mt-2 md:mt-8 lg:mt-3">
             <div className="title flex gap-3 items-center">

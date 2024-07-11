@@ -2,13 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-::-webkit-scrollbar {
+body::-webkit-scrollbar {
   display: none;
-}
-
-.svg-path {
-  width: 100%;
-  height: 100%;
 }
 
 .line {

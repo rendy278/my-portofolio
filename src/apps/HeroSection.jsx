@@ -8,7 +8,7 @@ import Me from "../images/rendy.png";
 import { RiScrollToBottomLine } from "react-icons/ri";
 const HeroSection = ({ yourname }) => {
   return (
-    <section className="  relative  w-full md:h-screen flex items-center justify-center">
+    <section className="relative  w-full md:h-screen flex items-center justify-center">
       <div className="container p-6 gap-6 flex flex-col-reverse justify-center  items-center md:flex-row">
         <div className="left dark:text-slate-200  ">
           <h1 className="flex items-center gap-3  lg:text-4xl text-2xl font-bold ">

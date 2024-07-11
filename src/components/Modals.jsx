@@ -3,7 +3,7 @@ import { Typewriter } from "react-simple-typewriter";
 import { z } from "zod";
 import { motion, AnimatePresence } from "framer-motion";
 
-const nameSchema = z.string().min(4, "Name must be at least 4 characters");
+const nameSchema = z.string().min(4);
 
 const Modal = ({ isOpen, onSubmit }) => {
   const [name, setName] = useState("");
@@ -13,8 +13,6 @@ const Modal = ({ isOpen, onSubmit }) => {
   useEffect(() => {
     if (isOpen) {
       document.body.classList.add("overflow-hidden");
-    } else {
-      document.body.classList.remove("overflow-hidden");
     }
     return () => {
       document.body.classList.remove("overflow-hidden");
@@ -37,7 +35,7 @@ const Modal = ({ isOpen, onSubmit }) => {
 
   return (
     <motion.div
-      className="fixed inset-0 z-[99999] p-6 w-full flex items-center justify-center bg-white"
+      className="fixed inset-0 z-[999999] p-6 w-full flex items-center justify-center bg-white"
       initial={{ y: 0 }}
       animate={submitted ? { y: "-100vh" } : { y: 0 }}
       transition={{ duration: 0.5 }}
@@ -105,7 +103,7 @@ const Modal = ({ isOpen, onSubmit }) => {
               <motion.button
                 key="submit-button"
                 onClick={handleSubmit}
-                className="w-80 font-semibold p-2 bg-blue-500 text-white rounded glass"
+                className="w-80 font-semibold p-2 bg-blue-500 text-white rounded-md"
                 initial={{ y: 50, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 exit={{ y: 50, opacity: 0 }}
