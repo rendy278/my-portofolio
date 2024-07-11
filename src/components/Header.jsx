@@ -24,8 +24,8 @@ const Navbar = () => {
 
   return (
     <header>
-      <Headroom>
-        <nav className="navbar text-[#E9F8F9] justify-center glass px-4 md:justify-between bg-[#537FE7]  z-50 shadow-[#C0EEF2] shadow-md">
+      <Headroom style={{ zIndex: 100000 }}>
+        <nav className="navbar text-[#E9F8F9] justify-center glass px-4 md:justify-between bg-[#537FE7]  shadow-[#C0EEF2] shadow-md">
           <div className="navbar-start font-bold text-xl">
             <a href="#">
               <span className="text-[#C0EEF2]">{"<"}</span> Rendev{" "}

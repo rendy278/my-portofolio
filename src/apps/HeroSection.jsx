@@ -8,9 +8,9 @@ import Me from "../images/rendy.png";
 import { RiScrollToBottomLine } from "react-icons/ri";
 const HeroSection = ({ yourname }) => {
   return (
-    <section className="  h-full relative  w-full sm:h-screen flex items-center justify-center">
-      <div className="container p-6 flex flex-col-reverse justify-center  items-center md:flex-row">
-        <div className="left dark:text-slate-200   w-full">
+    <section className="  relative  w-full md:h-screen flex items-center justify-center">
+      <div className="container p-6 gap-6 flex flex-col-reverse justify-center  items-center md:flex-row">
+        <div className="left dark:text-slate-200  ">
           <h1 className="flex items-center gap-3  lg:text-4xl text-2xl font-bold ">
             Hi,{" "}
             <span className="text-[#537FE7] dark:text-blue-400">
@@ -98,11 +98,9 @@ const HeroSection = ({ yourname }) => {
             </button>
           </div>
         </div>
-        <div className="right mb-8">
-          <div className="flex items-center justify-center ">
-            <div className="circle w-52 h-52 sm:w-60 sm:h-60 md:w-[18rem] md:h-[18rem] lg:w-[24rem] lg:h-[24rem] border-2 border-[#C0EEF2] ">
-              <img src={Me} alt="profile" />
-            </div>
+        <div className="right ">
+          <div className="circle w-52 h-52 sm:w-60 sm:h-60 md:w-[18rem] md:h-[18rem] lg:w-[24rem] lg:h-[24rem] border-2 border-[#C0EEF2] ">
+            <img src={Me} alt="profile" />
           </div>
         </div>
       </div>

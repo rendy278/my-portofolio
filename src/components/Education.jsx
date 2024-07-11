@@ -22,9 +22,9 @@ function Timeline() {
           <div className="flex flex-col justify-start h-max mt-5 px-6 ">
             <h1 className="font-bold gap-0 flex flex-col md:flex-row justify-between  w-full">
               {item.title}
-              <span className="text-[#537FE7] flex items-center gap-1 dark:text-blue-400 font-bold">
+              <time className="text-[#537FE7] flex items-center gap-1 dark:text-blue-400 font-bold">
                 <MdOutlineDateRange /> {item.result}
-              </span>
+              </time>
             </h1>
             <strong className="text-blue-400 dark:text-[#C0EEF2] font-bold">
               {item.subTitle}

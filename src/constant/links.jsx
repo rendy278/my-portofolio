@@ -17,7 +17,7 @@ export const links = [
     icon: <BsFillPersonFill size={25} />,
   },
   {
-    name: "Project",
+    name: "Projects",
     link: "#project",
     dis: "translate-x-[165px]",
     icon: <AiFillProject size={25} />,
