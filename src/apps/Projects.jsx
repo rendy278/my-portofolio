@@ -11,7 +11,7 @@ const Projects = () => {
             return (
               <div
                 key={index}
-                className="mockup-browser  w-72 sm:w-80 md:w-96 bg-base-300  border-gray-600 border"
+                className="mockup-browser w-72 sm:w-80 md:w-96 bg-base-300  border-gray-600 border"
               >
                 <div className="mockup-browser-toolbar ">
                   <div className="input  border-gray-600 border">
@@ -26,8 +26,8 @@ const Projects = () => {
                   />
                 </div>
                 <div className="p-3 flex flex-col gap-2">
-                  <div className="title flex flex-wrap justify-between items-center w-full">
-                    <strong className="text-sm md:text-lg">
+                  <div className="title flex flex-wrap justify-between gap-2 items-center w-full">
+                    <strong className="text-lg">
                       <h1 className="font-bold ">{web.title}</h1>
                       <a
                         href={web.repository}
@@ -66,7 +66,7 @@ const Projects = () => {
           <div className="border-b h-3 w-12 border-black dark:border-slate-200"></div>
           <h1 className="font-bold text-3xl md:text-4xl">Projects :</h1>
         </div>
-        <p className="text-base md:text-3xl">
+        <p className="text-base text-center md:text-3xl">
           This is some of my projects that I have done and currently working on.
         </p>
         <Tabs tabs={projectTabs} />
