@@ -18,7 +18,7 @@ export const links = [
   },
   {
     name: "Projects",
-    link: "#project",
+    link: "#projects",
     dis: "translate-x-[165px]",
     icon: <AiFillProject size={25} />,
   },

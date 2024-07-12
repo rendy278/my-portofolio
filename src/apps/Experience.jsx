@@ -43,13 +43,13 @@ const Experience = () => {
             ))}
           </Swiper>
         </div>
-        <div className="right">
+        <div className="right text-lg md:text-xl">
           <div className="title flex gap-3 items-center dark:text-slate-200">
             <div className="border-b h-3 w-12 border-black dark:border-slate-200"></div>
             <h1 className="font-bold text-3xl md:text-4xl">Experience :</h1>
           </div>
           {exptimeline.map((item, index) => (
-            <div key={index} className="flex dark:text-slate-200">
+            <div key={index} className="flex  dark:text-slate-200">
               <div className="mt-5">
                 <div className="flex justify-center items-center text-white rounded-full w-16 h-16 md:w-20 md:h-20 bg-slate-200 border-2 md:border-4 border-blue-500">
                   <h1 className="text-gray-700">{item.icon}</h1>
@@ -61,7 +61,7 @@ const Experience = () => {
                 )}
               </div>
               <div className="flex flex-col justify-start h-max mt-5 px-6">
-                <h1 className="font-bold gap-0 flex flex-col justify-between w-full">
+                <h1 className="font-bold gap-0 flex flex-col uppercase justify-between w-full">
                   {item.title}
                   <time className="text-[#537FE7] flex items-center gap-1 dark:text-blue-400 font-bold">
                     {item.result}
