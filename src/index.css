@@ -23,7 +23,7 @@ body::-webkit-scrollbar {
 }
 
 .circle {
-  background: #537fe7;
+  background: #d04848;
   border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
   overflow: hidden;
   animation: morph 3s linear infinite;
@@ -63,7 +63,7 @@ body::-webkit-scrollbar {
   list-style: none;
   width: 20px;
   height: 20px;
-  background: #88a7ee;
+  background: #ff0606;
   animation: animate 25s linear infinite;
   bottom: -150px;
 }

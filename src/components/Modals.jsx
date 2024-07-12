@@ -66,7 +66,7 @@ const Modal = ({ isOpen, onSubmit }) => {
         <h2 className="md:text-5xl text-gray-600 text-3xl font-bold mb-4">
           Hello, I{"'"}m Rendy
         </h2>
-        <strong className="lg:text-4xl text-2xl font-montserrat font-bold text-[#537FE7] ">
+        <strong className="lg:text-4xl text-2xl font-montserrat font-bold text-red-500 ">
           <Typewriter
             words={["Welcome To My Portofolio"]}
             loop={true}

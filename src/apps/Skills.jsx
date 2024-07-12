@@ -94,7 +94,7 @@ const Skills = () => {
               <div className="border-b h-3 w-12 border-black dark:border-slate-200"></div>
               <h1 className="font-bold text-3xl md:text-4xl">Hobby :</h1>
             </div>
-            <ul className="timeline overflow-auto dark:text-[#537FE7]">
+            <ul className="timeline overflow-auto text-red-500 font-semibold">
               <li>
                 <div className="timeline-middle">
                   <svg

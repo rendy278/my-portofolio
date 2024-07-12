@@ -10,7 +10,7 @@ function Timeline() {
       {edutimeline.map((item, index) => (
         <div key={"W" + index} className="flex">
           <div className="mt-5">
-            <div className="flex justify-center items-center text-white rounded-full w-16 h-16 md:w-20 md:h-20 bg-slate-200 border-2 md:border-4 border-blue-500">
+            <div className="flex justify-center items-center text-white rounded-full w-16 h-16 md:w-20 md:h-20 bg-slate-200 border-2 md:border-4 border-red-500">
               <img src={item.images} className="w-10 h-10" alt="" />
             </div>
             {index < edutimeline.length - 1 ? (
@@ -22,11 +22,11 @@ function Timeline() {
           <div className="flex flex-col justify-start h-max mt-5 px-6 ">
             <h1 className="font-bold gap-0 flex flex-col md:flex-row justify-between  w-full">
               {item.title}
-              <time className="text-[#537FE7] flex items-center gap-1 dark:text-blue-400 font-bold">
+              <time className="text-red-500 flex items-center gap-1  font-bold">
                 <MdOutlineDateRange /> {item.result}
               </time>
             </h1>
-            <strong className="text-blue-400 dark:text-[#C0EEF2] font-bold">
+            <strong className="text-yellow-600 dark:text-yellow-500  font-bold">
               {item.subTitle}
             </strong>
             <p>{item.des}</p>

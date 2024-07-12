@@ -25,11 +25,11 @@ const Navbar = () => {
   return (
     <header>
       <Headroom style={{ zIndex: 100000 }}>
-        <nav className="navbar text-[#E9F8F9] justify-center glass px-4 md:justify-between bg-[#537FE7]  shadow-[#C0EEF2] shadow-md">
+        <nav className="navbar text-white justify-center glass px-4 md:justify-between bg-red-600  shadow-yellow-600 shadow-md">
           <div className="navbar-start font-bold text-xl">
             <a href="#">
-              <span className="text-[#C0EEF2]">{"<"}</span> Rendev{" "}
-              <span className="text-[#C0EEF2]">{"/>"}</span>
+              <span className="text-yellow-400">{"<"}</span> Rendev{" "}
+              <span className="text-yellow-400">{"/>"}</span>
             </a>
           </div>
           <div className="font-bold text-lg hidden md:flex justify-between w-full">
@@ -51,7 +51,7 @@ const Navbar = () => {
             <NightMode />
             <button
               onClick={handleShare}
-              className="flex items-center justify-center p-2 bg-white text-[#537FE7] dark:text-white rounded-lg  dark:bg-gray-700"
+              className="flex items-center justify-center p-2 bg-slate-100 text-red-600 dark:text-yellow-200 rounded-lg  dark:bg-gray-700"
             >
               <FaProjectDiagram />
             </button>

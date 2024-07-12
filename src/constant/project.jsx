@@ -29,9 +29,9 @@ export const webproject = [
         <FaReact />
       </p>
     ),
-    link: "https://nextube-movie.vercel.app/",
+    link: "https://type-script-landing-page.vercel.app/",
 
-    repository: "https://github.com/rendy278/Nextube-Movie.git",
+    repository: "https://github.com/rendy278/TypeScriptLandingPage.git",
   },
   {
     title: "RenAnimelist",
@@ -42,8 +42,8 @@ export const webproject = [
         <FaReact /> <SiNextdotjs />
       </p>
     ),
-    link: "https://nextube-movie.vercel.app/",
+    link: "https://anime-website-tan.vercel.app/",
 
-    repository: "https://github.com/rendy278/Nextube-Movie.git",
+    repository: "https://github.com/rendy278/Anime-website.git",
   },
 ];
