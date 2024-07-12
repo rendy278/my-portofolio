@@ -99,7 +99,11 @@ const HeroSection = ({ yourname }) => {
         </div>
         <div className="right ">
           <div className="circle w-52 h-52 sm:w-60 sm:h-60 md:w-[18rem] md:h-[18rem] lg:w-[24rem] lg:h-[24rem] border-2 border-yellow-400 ">
-            <img src={isNightMode ? Me : Sparkle} alt="profile" />
+            <img
+              src={isNightMode ? Me : Sparkle}
+              alt="profile"
+              className="h-60 md:h-72 lg:h-96 dark:h-fit"
+            />
           </div>
         </div>
       </div>
