@@ -13,7 +13,7 @@ const Tabs = ({ tabs }) => {
             className={`${
               activeTab === index
                 ? "bg-red-500 text-white transition-all duration-500 font-bold rounded-xl"
-                : "text-gray-700 bg-slate-300 font-bold rounded-xl"
+                : "text-gray-700 bg-slate-300 dark:text-slate-200 dark:bg-gray-600 font-bold rounded-xl"
             } py-4 px-6 block border-b-2 border-transparent font-medium`}
             onClick={() => setActiveTab(index)}
           >

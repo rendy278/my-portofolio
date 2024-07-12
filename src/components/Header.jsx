@@ -24,7 +24,10 @@ const Navbar = () => {
 
   return (
     <header>
-      <Headroom style={{ zIndex: 100000 }}>
+      <Headroom
+        style={{ zIndex: 100000 }}
+        className="static md:fixed w-full z-[99999] "
+      >
         <nav className="navbar text-white justify-center glass px-4 md:justify-between bg-red-600  shadow-yellow-600 shadow-md">
           <div className="navbar-start font-bold text-xl">
             <a href="#">

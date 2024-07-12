@@ -95,15 +95,14 @@ const Modal = ({ isOpen, onSubmit }) => {
             value={name}
             onChange={(e) => setName(e.target.value)}
             placeholder="Insert your name"
-            className="w-80 outline-none hover:border-blue-500 border-b text-center bg-transparent placeholder:text-center mt-3 p-2 border-gray-700 mb-4"
+            className="w-80 outline-none hover:border-red-500 border-b text-center bg-transparent placeholder:text-center mt-3 p-2 border-gray-700 mb-4"
           />
-          {error && <p className="text-red-500">{error}</p>}
           <AnimatePresence>
             {name.length >= 4 && (
               <motion.button
                 key="submit-button"
                 onClick={handleSubmit}
-                className="w-80 font-semibold p-2 bg-blue-500 text-white rounded-md"
+                className="w-80 font-semibold p-2 bg-red-600 text-white rounded-md"
                 initial={{ y: 50, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 exit={{ y: 50, opacity: 0 }}
@@ -113,6 +112,7 @@ const Modal = ({ isOpen, onSubmit }) => {
               </motion.button>
             )}
           </AnimatePresence>
+          {error && <p className="text-red-500">{error}</p>}
         </form>
       </motion.div>
     </motion.div>

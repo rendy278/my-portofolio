@@ -91,7 +91,7 @@ const HeroSection = ({ yourname }) => {
             <button className="p-3 rounded-md  bg-transparent border dark:border-slate-200 dark:text-slate-200 border-gray-700 text-gray-700 duration-300 transition-all hover:text-slate-200 hover:bg-red-500 font-bold ">
               <a href="">Contact Me</a>
             </button>
-            <button className="p-3 flex justify-center items-center rounded-md text-white bg-red-500 font-bold ">
+            <button className="p-2.5 flex justify-center items-center rounded-md text-white bg-red-500 font-bold ">
               <IoMdDocument size={20} />
               Download CV
             </button>
