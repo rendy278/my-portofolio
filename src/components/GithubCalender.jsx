@@ -1,4 +1,5 @@
 import GitHubCalendar from "react-github-calendar";
+import Title from "./Title";
 
 const Github = () => {
   const selectLastHalfYear = (contributions) => {
@@ -13,11 +14,8 @@ const Github = () => {
   };
 
   return (
-    <section className="flex flex-col mt-3 p-6 ">
-      <div className="title flex gap-3 items-center mb-8">
-        <div className="border-b h-3 w-12 border-black dark:border-slate-200"></div>
-        <h1 className="font-bold text-3xl md:text-4xl">Days Code :</h1>
-      </div>
+    <section className="flex flex-col mt-3 gap-5 p-6 ">
+      <Title title="Days Code" />
       <GitHubCalendar
         username="rendy278"
         blockSize={18}

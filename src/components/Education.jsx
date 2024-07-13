@@ -1,12 +1,10 @@
 import { edutimeline } from "../constant/timeline";
 import { MdOutlineDateRange } from "react-icons/md";
+import Title from "./Title";
 function Timeline() {
   return (
     <div className="text-lg md:text-xl">
-      <div className="title flex gap-3 items-center">
-        <div className="border-b h-3 w-12 border-black dark:border-slate-200"></div>
-        <h1 className="font-bold text-3xl md:text-4xl">Education :</h1>
-      </div>
+      <Title title="Education" />
       {edutimeline.map((item, index) => (
         <div key={"W" + index} className="flex">
           <div className="mt-5">
@@ -20,16 +18,16 @@ function Timeline() {
             )}
           </div>
           <div className="flex flex-col justify-start h-max mt-5 px-6 ">
-            <h1 className="font-bold gap-0 flex flex-col md:flex-row justify-between  w-full">
+            <h1 className="font-bold gap-0 font-crete-round flex flex-col md:flex-row justify-between  w-full">
               {item.title}
-              <time className="text-red-500 flex items-center gap-1  font-bold">
+              <time className="text-red-500 font-reddit-sans flex items-center gap-1  font-bold">
                 <MdOutlineDateRange /> {item.result}
               </time>
             </h1>
-            <strong className="text-yellow-600 dark:text-yellow-500  font-bold">
+            <strong className="text-yellow-600 font-crete-round dark:text-yellow-500  font-bold">
               {item.subTitle}
             </strong>
-            <p>{item.des}</p>
+            <p className=" font-reddit-sans">{item.des}</p>
           </div>
         </div>
       ))}

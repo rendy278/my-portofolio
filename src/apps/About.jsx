@@ -1,5 +1,5 @@
 import Education from "../components/Education";
-
+import Title from "../components/Title";
 const About = () => {
   return (
     <section
@@ -8,11 +8,8 @@ const About = () => {
     >
       <div className="container gap-5 px-3 sm:px-4 md:px-6  py-5 flex flex-col lg:flex-row justify-between  items-center">
         <div className="left w-full">
-          <div className="title flex gap-3 items-center">
-            <div className="border-b h-3 w-12 border-black dark:border-slate-200"></div>
-            <h1 className="font-bold text-3xl md:text-4xl">About Me :</h1>
-          </div>
-          <p className="font-semibold my-3  ">
+          <Title title="About Me" />
+          <p className="font-semibold my-3  font-reddit-sans">
             Pleased to meet you! My name is Rendy, I am currently 20 years old,
             I am a React developer who is enthusiastic about entering the world
             of front-end development. As a passionate learner in this field, I

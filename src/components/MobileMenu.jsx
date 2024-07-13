@@ -24,9 +24,9 @@ const MobileMenu = () => {
         scroll ? "opacity-100" : ""
       }`}
     >
-      <ul className="flex mr-[3.5px] relative">
+      <ul className="flex font-crete-round mr-[3.5px] relative">
         <span
-          className={` bg-yellow-500 duration-500 ${links[active].dis} border-4 border-white h-16 w-16 absolute -top-4 rounded-full`}
+          className={` bg-yellow-500 duration-500 ${links[active].dis} border-4 border-slate-200 h-16 w-16 absolute -top-4 rounded-full`}
         ></span>
         {links.map((menu, i) => (
           <li
@@ -34,7 +34,7 @@ const MobileMenu = () => {
             className="w-[4.9rem] flex mx-auto justify-center items-center"
           >
             <a
-              className="flex flex-col font-semibold text-white justify-center items-center text-wrap pt-6"
+              className="flex flex-col font-semibold text-slate-100 justify-center items-center text-wrap pt-6"
               onClick={() => setActive(i)}
               href={menu.link}
             >

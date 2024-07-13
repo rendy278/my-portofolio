@@ -13,7 +13,7 @@ const HeroSection = ({ yourname }) => {
   return (
     <section className="relative  w-full md:h-screen flex items-center justify-center">
       <div className="container p-6 gap-6 flex flex-col-reverse justify-center  items-center md:flex-row">
-        <div className="left dark:text-slate-200  ">
+        <div className="left font-crete-round dark:text-slate-200  ">
           <h1 className="flex items-center gap-3  lg:text-4xl text-2xl font-bold ">
             Hi, <span className="text-red-500 ">{yourname}</span>{" "}
             <span>
@@ -41,11 +41,11 @@ const HeroSection = ({ yourname }) => {
               />
             </span>
           </h3>
-          <p className="font-semibold w-full text-lg md:text-xl md:w-[70%] my-3 ">
+          <p className="font-semibold font-reddit-sans w-full text-lg md:text-xl md:w-[70%] my-3 ">
             I am a Front End web developer who enjoys building beautiful web
             applications that delivers a better user experience.
           </p>
-          <div className="socials my-4 text-4xl text-white flex gap-3  justify-start">
+          <div className="socials my-4 text-4xl text-slate-100 flex gap-3  justify-start">
             <a
               href="https://www.instagram.com/rnd_arstls?igsh=bWZiNjNqNmhybGps"
               className="transition-transform hover:shadow-lg hover:scale-105 bg-red-500 rounded-lg"
@@ -88,10 +88,10 @@ const HeroSection = ({ yourname }) => {
             </a>
           </div>
           <div className="flex mt-4 gap-3">
-            <button className="p-3 rounded-md  bg-transparent border dark:border-slate-200 dark:text-slate-200 border-gray-700 text-gray-700 duration-300 transition-all hover:text-slate-200 hover:bg-red-500 font-bold ">
+            <button className="p-3 rounded-md  bg-transparent border dark:border-slate-100 dark:text-slate-200 border-gray-700 text-gray-700 duration-300 transition-all hover:text-slate-100 hover:bg-red-500 font-bold ">
               <a href="">Contact Me</a>
             </button>
-            <button className="p-2.5 flex justify-center items-center rounded-md text-white bg-red-500 font-bold ">
+            <button className="p-2.5 flex justify-center items-center rounded-md text-slate-100 bg-red-500 font-bold ">
               <IoMdDocument size={20} />
               Download CV
             </button>

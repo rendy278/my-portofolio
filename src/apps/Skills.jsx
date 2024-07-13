@@ -1,5 +1,6 @@
 import Github from "../components/GithubCalender";
 import Tabs from "../components/Tabs";
+import Title from "../components/Title";
 import { Programing, Framework, Tools } from "../constant/skill";
 const Skills = () => {
   const tabs = [
@@ -81,97 +82,11 @@ const Skills = () => {
     <section className="md:h-screen  h-full  flex justify-center items-center dark:text-slate-200">
       <div className="w-full px-6 md:px-6 py-5 gap-5 flex flex-col lg:flex-row justify-between items-center">
         <div className="left flex flex-col gap-3 md:gap-6 lg:gap-6 w-full">
-          <div className="title flex gap-3 items-center">
-            <div className="border-b h-3 w-12 border-black dark:border-slate-200"></div>
-            <h1 className="font-bold text-3xl md:text-4xl">Tech Stack :</h1>
-          </div>
+          <Title title="Tech Stack" />
           <Tabs tabs={tabs} />
         </div>
         <div className="lg:w-[50%] w-full ">
           <Github />
-          <div className="mt-2 md:mt-8 lg:mt-3">
-            <div className="title flex gap-3 items-center">
-              <div className="border-b h-3 w-12 border-black dark:border-slate-200"></div>
-              <h1 className="font-bold text-3xl md:text-4xl">Hobby :</h1>
-            </div>
-            <ul className="timeline overflow-auto text-red-500 font-semibold">
-              <li>
-                <div className="timeline-middle">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    className="h-5 w-5"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                </div>
-                <div className="timeline-end timeline-box">Drawing Arts</div>
-                <hr />
-              </li>
-              <li>
-                <hr />
-                <div className="timeline-middle">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    className="h-5 w-5"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                </div>
-                <div className="timeline-end timeline-box">Playing Game</div>
-                <hr />
-              </li>
-              <li>
-                <hr />
-                <div className="timeline-middle">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    className="h-5 w-5"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                </div>
-                <div className="timeline-end timeline-box">Coding</div>
-                <hr />
-              </li>
-              <li>
-                <hr />
-                <div className="timeline-middle">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    className="h-5 w-5"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                </div>
-                <div className="timeline-end timeline-box">Grapich Design</div>
-                <hr />
-              </li>
-            </ul>
-          </div>
         </div>
       </div>
     </section>

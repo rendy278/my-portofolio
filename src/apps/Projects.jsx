@@ -1,20 +1,25 @@
 import Tabs from "../components/Tabs";
-import { webproject } from "../constant/project";
+import {
+  webproject,
+  webapp,
+  machinelearn,
+  gameproject,
+} from "../constant/project";
 import { FaGithub } from "react-icons/fa";
 const Projects = () => {
   const projectTabs = [
     {
       title: "Website",
       content: (
-        <div className="flex flex-wrap w-full  justify-center items-center  gap-3 dark:text-gray-700 mx-auto">
+        <div className="flex flex-wrap w-full font-reddit-sans  justify-center items-center  gap-3 dark:text-gray-700 mx-auto">
           {webproject.map((web, index) => {
             return (
               <div
                 key={index}
-                className="mockup-browser w-72 sm:w-80 md:w-96 bg-slate-200 dark:border-slate-300 shadow-md shadow-zinc-400 border-gray-600 border"
+                className="mockup-browser w-72 sm:w-80 lg:w-96 bg-slate-200 dark:border-slate-300 shadow-md shadow-zinc-400 border-gray-600 border"
               >
                 <div className="mockup-browser-toolbar ">
-                  <div className="input  border-gray-600 border">
+                  <div className=" input  border-gray-600 border">
                     <a href={web.link}>{web.link}</a>
                   </div>
                 </div>
@@ -40,7 +45,7 @@ const Projects = () => {
                     <strong>{web.build} </strong>
                   </div>
                   <button className="p-3 hover:scale-95 duration-200 transition-all bg-red-600 glass text-slate-200 rounded-md font-bold">
-                    View More Information
+                    <a href={web.link}>Live Demo</a>
                   </button>
                 </div>
               </div>
@@ -51,12 +56,128 @@ const Projects = () => {
     },
     {
       title: "Games",
+      content: (
+        <div className="flex flex-wrap w-full font-reddit-sans  justify-center items-center  gap-3 dark:text-gray-700 mx-auto">
+          {gameproject.map((web, index) => {
+            return (
+              <div
+                key={index}
+                className="mockup-browser w-72 sm:w-80 lg:w-96 bg-slate-200 dark:border-slate-300 shadow-md shadow-zinc-400 border-gray-600 border"
+              >
+                <div className="mockup-browser-toolbar ">
+                  <div className=" input  border-gray-600 border">
+                    <a href={web.link}>{web.link}</a>
+                  </div>
+                </div>
+                <div className="border-base-300 flex justify-center border-t ">
+                  <img
+                    src={web.image}
+                    alt={web.name}
+                    className="w-full h-40 md:h-60 object-cover"
+                  />
+                </div>
+                <div className="p-3 flex flex-col gap-2">
+                  <div className="title flex flex-wrap justify-between gap-2 items-center w-full">
+                    <strong className="text-lg">
+                      <h1 className="font-bold ">{web.title}</h1>
+                      <a
+                        href={web.repository}
+                        className="flex items-center font-semibold justify-start gap-2"
+                      >
+                        <FaGithub />{" "}
+                        <span className="underline">Repository</span>
+                      </a>
+                    </strong>
+                    <strong>{web.build} </strong>
+                  </div>
+                  <button className="p-3 hover:scale-95 duration-200 transition-all bg-red-600 glass text-slate-200 rounded-md font-bold">
+                    <a href={web.link}>Live Demo</a>
+                  </button>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      ),
     },
     {
       title: "Machine learning",
+      content: (
+        <div className="flex flex-wrap w-full font-reddit-sans  justify-center items-center  gap-3 dark:text-gray-700 mx-auto">
+          {machinelearn.map((mclearn, index) => {
+            return (
+              <div key={index} className="mockup-window bg-base-300 border">
+                <div className="bg-base-200 flex justify-center ">
+                  <img
+                    src={mclearn.image}
+                    alt=""
+                    className="w-96 md:w-full md:h-80"
+                  />
+                </div>
+                <div className="title p-3 flex justify-between items-center">
+                  <h1 className="font-bold">{mclearn.title}</h1>
+                  <strong>{mclearn.build}</strong>
+                </div>
+                <a
+                  href={mclearn.repository}
+                  className="flex absolute top-3.5 right-4 items-center font-semibold justify-start gap-2"
+                >
+                  <FaGithub /> <span className="underline">Repository</span>
+                </a>
+              </div>
+            );
+          })}
+        </div>
+      ),
     },
     {
       title: "Web Apps",
+      content: (
+        <div className="flex flex-wrap w-full font-reddit-sans  justify-center items-center  gap-3 dark:text-gray-700 mx-auto">
+          {webapp.map((apps, index) => {
+            return (
+              <div
+                key={index}
+                className="flex-col flex dark:text-slate-200 text-center justify-center items-center"
+              >
+                <div className="flex flex-col gap-2 justify-center items-center my-3">
+                  <h1 className="font-bold">{apps.title}</h1>
+                  <strong>{apps.build}</strong>
+                </div>
+
+                <div className=" border-4 pb-2.5 border-red-500 rounded-xl bg-gray-900">
+                  <div className="p-3 relative text-center">
+                    <div className="bg-gray-900 h-5 top-2 translate-x-12 absolute flex justify-center items-center w-20 rounded-b-lg">
+                      <div className="flex justify-between items-center gap-3">
+                        <span className="bg-gray-600 w-10 h-1 rounded-full"></span>
+                        <span className="bg-gray-600 w-2 h-2  rounded-full"></span>
+                      </div>
+                    </div>
+                    <img
+                      src={apps.image}
+                      alt=""
+                      className="w-full h-96 rounded-md"
+                    />
+                  </div>
+                  <button className=" text-sm text-slate-200">
+                    <a href={apps.link} className="font-bold">
+                      Live Demo {">>"}
+                    </a>
+                  </button>
+                </div>
+                <div className="flex flex-col gap-3 mt-3 items-center justify-center">
+                  <a
+                    href={apps.repository}
+                    className="flex items-center font-semibold justify-start gap-2"
+                  >
+                    <FaGithub /> <span className="underline">Repository</span>
+                  </a>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      ),
     },
   ];
   return (
@@ -67,10 +188,12 @@ const Projects = () => {
       <div className="container p-6 flex flex-col gap-5 justify-center items-center">
         <div className="title flex gap-3 items-center dark:text-slate-200">
           <div className="border-b h-3 w-12 border-black dark:border-slate-200"></div>
-          <h1 className="font-bold text-3xl md:text-4xl">Projects :</h1>
+          <h1 className="font-bold text-3xl md:text-4xl font-crete-round">
+            Projects
+          </h1>
           <div className="border-b h-3 w-12 border-black dark:border-slate-200"></div>
         </div>
-        <p className="text-lg text-center md:text-3xl">
+        <p className="text-lg text-center md:text-3xl font-reddit-sans">
           This is some of my projects that I have done and currently working on.
         </p>
         <Tabs tabs={projectTabs} />

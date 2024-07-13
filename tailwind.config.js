@@ -4,6 +4,10 @@ export default {
   darkMode: "class",
   theme: {
     extend: {
+      fontFamily: {
+        "crete-round": ['"Crete Round"', "serif"],
+        "reddit-sans": ['"Reddit Sans"', "sans-serif"],
+      },
       screens: {
         sm: "360px",
         md: "768px",

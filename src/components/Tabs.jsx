@@ -5,7 +5,7 @@ const Tabs = ({ tabs }) => {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col font-crete-round">
       <div className="flex flex-wrap justify-center mx-auto gap-3   rounded-xl">
         {tabs.map((tab, index) => (
           <button

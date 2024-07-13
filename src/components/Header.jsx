@@ -28,9 +28,9 @@ const Navbar = () => {
         style={{ zIndex: 100000 }}
         className="static md:fixed w-full z-[99999] "
       >
-        <nav className="navbar text-white justify-center glass px-4 md:justify-between bg-red-600  shadow-yellow-600 shadow-md">
+        <nav className="navbar text-slate-100 font-reddit-sans justify-centers   glass px-4 md:justify-between bg-red-600  shadow-yellow-600 shadow-md">
           <div className="navbar-start font-bold text-xl">
-            <a href="#">
+            <a href="#" className=" font-crete-round">
               <span className="text-yellow-400">{"<"}</span> Rendev{" "}
               <span className="text-yellow-400">{"/>"}</span>
             </a>
@@ -41,7 +41,7 @@ const Navbar = () => {
                 <li key={i} className="line ">
                   <a
                     href={menu.link}
-                    className="hover:text-[#C0EEF2] flex justify-center items-center gap-2"
+                    className="hover:text-yellow-400 flex justify-center items-center gap-2"
                   >
                     <span>{menu.icon}</span>
                     {menu.name}

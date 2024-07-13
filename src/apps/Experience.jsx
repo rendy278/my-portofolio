@@ -5,16 +5,14 @@ import "swiper/css/effect-cards";
 import { EffectCards } from "swiper/modules";
 import { exptimeline } from "../constant/timeline";
 import { certificates } from "../constant/certificates";
+import Title from "../components/Title";
 
 const Experience = () => {
   return (
     <section className="md:h-screen h-full w-full flex justify-center items-center">
       <div className="container gap-6 px-3 sm:px-4 md:px-6 py-5 flex flex-col lg:flex-row justify-between items-center">
         <div className="left w-full">
-          <div className="title flex gap-3 items-center dark:text-slate-200">
-            <div className="border-b h-3 w-12 border-black dark:border-slate-200"></div>
-            <h1 className="font-bold text-3xl md:text-4xl">Certificates :</h1>
-          </div>
+          <Title title="Certificates" />
           <Swiper
             effect={"cards"}
             grabCursor={true}
@@ -44,10 +42,7 @@ const Experience = () => {
           </Swiper>
         </div>
         <div className="right text-lg md:text-xl">
-          <div className="title flex gap-3 items-center dark:text-slate-200">
-            <div className="border-b h-3 w-12 border-black dark:border-slate-200"></div>
-            <h1 className="font-bold text-3xl md:text-4xl">Experience :</h1>
-          </div>
+          <Title title="Experience" />
           {exptimeline.map((item, index) => (
             <div key={index} className="flex  dark:text-slate-200">
               <div className="mt-5">
@@ -61,16 +56,16 @@ const Experience = () => {
                 )}
               </div>
               <div className="flex flex-col justify-start h-max mt-5 px-6">
-                <h1 className="font-bold gap-0 flex flex-col uppercase justify-between w-full">
+                <h1 className="font-bold gap-0 font-crete-round flex flex-col uppercase justify-between w-full">
                   {item.title}
-                  <time className="text-red-500 flex items-center gap-1  font-bold">
+                  <time className="text-red-500 font-reddit-sans  flex items-center gap-1  font-bold">
                     {item.result}
                   </time>
                 </h1>
-                <strong className="text-yellow-600 dark:text-yellow-500 font-bold">
+                <strong className="text-yellow-600 font-crete-round dark:text-yellow-500 font-bold">
                   {item.position}
                 </strong>
-                <p>{item.des}</p>
+                <p className=" font-reddit-sans">{item.des}</p>
               </div>
             </div>
           ))}
