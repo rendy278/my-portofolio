@@ -7,6 +7,11 @@ import NftWeb from "../images/projects/website/NftWebsite.png";
 import CoffeShop from "../images/projects/website/Coffeshop.png";
 import WeddingWeb from "../images/projects/website/Weddingweb.png";
 import WeatherApp from "../images/projects/website/Weatherapp.png";
+import Portofolio1 from "../images/projects/website/portofolio1.png";
+import Pokelist from "../images/projects/website/Pokelist.png";
+import Ecourse from "../images/projects/website/Ecourse.png";
+import RoundGym from "../images/projects/website/GymWeb.png";
+import Investman from "../images/projects/website/Investman.png";
 import {
   FaReact,
   FaHtml5,
@@ -28,6 +33,19 @@ import {
 
 export const webproject = [
   {
+    title: "Portofolio V1",
+    image: Portofolio1,
+    build: (
+      <p className="flex gap-2 text-lg text-gray-600">
+        <FaHtml5 /> <FaCss3 /> <IoLogoJavascript /> <SiTailwindcss />
+        <FaReact />
+      </p>
+    ),
+    link: "https://rendev-ten.vercel.app/",
+
+    repository: "https://github.com/rendy278",
+  },
+  {
     title: "Nextube Movie",
     image: NextTube,
     build: (
@@ -40,7 +58,6 @@ export const webproject = [
 
     repository: "https://github.com/rendy278/Nextube-Movie.git",
   },
-
   {
     title: "RenAnimelist",
     image: Animelist,
@@ -53,6 +70,19 @@ export const webproject = [
     link: "https://anime-website-tan.vercel.app/",
 
     repository: "https://github.com/rendy278/Anime-website.git",
+  },
+  {
+    title: "Investman",
+    image: Investman,
+    build: (
+      <p className="flex gap-2 text-lg text-gray-600">
+        <FaHtml5 /> <FaCss3 /> <IoLogoJavascript /> <SiTailwindcss />
+        <FaReact /> <SiNextdotjs />
+      </p>
+    ),
+    link: "https://anime-website-tan.vercel.app/",
+
+    repository: "https://github.com/rendy278/INVESTMAN.git",
   },
   {
     title: "Expert System",
@@ -95,6 +125,18 @@ export const webproject = [
     repository: "https://github.com/rendy278/Amazon-Clone.git",
   },
   {
+    title: "Ecourse",
+    image: Ecourse,
+    build: (
+      <p className="flex gap-2 text-lg text-gray-600">
+        <FaHtml5 /> <FaCss3 /> <IoLogoJavascript /> <SiTailwindcss />
+        <FaReact />
+      </p>
+    ),
+    link: "https://courseren-rendev.vercel.app/",
+    repository: "https://github.com/rendy278/courseren.git",
+  },
+  {
     title: "Nft Web",
     image: NftWeb,
     build: (
@@ -130,6 +172,17 @@ export const webproject = [
     repository: "https://github.com/rendy278/coffe-shop-landing-page.git",
   },
   {
+    title: "Roud Gym",
+    image: RoundGym,
+    build: (
+      <p className="flex gap-2 text-lg text-gray-600">
+        <FaHtml5 /> <FaCss3 /> <IoLogoJavascript /> <FaReact />
+      </p>
+    ),
+    link: "https://roundgym-git-main-rendev.vercel.app/",
+    repository: "https://github.com/rendy278/roundgym.git",
+  },
+  {
     title: "Weather web",
     image: WeatherApp,
     build: (
@@ -139,6 +192,17 @@ export const webproject = [
     ),
     link: "https://weather-app-one-pi-54.vercel.app/",
     repository: "https://github.com/rendy278/weather-app.git",
+  },
+  {
+    title: "Pokelist",
+    image: Pokelist,
+    build: (
+      <p className="flex gap-2 text-lg text-gray-600">
+        <FaHtml5 /> <FaCss3 /> <IoLogoJavascript />
+      </p>
+    ),
+    link: "https://pokelist-plum.vercel.app/index.html",
+    repository: "https://github.com/rendy278/pokelist.git",
   },
 ];
 

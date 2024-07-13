@@ -27,7 +27,7 @@ const App = () => {
   };
 
   return (
-    <main className="overflow-x-hidden ">
+    <main className="overflow-x-hidden " id="home">
       <ThemeProvider>
         <Modal isOpen={isModalOpen} onSubmit={handleNameSubmit} />
         <Header />

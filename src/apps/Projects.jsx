@@ -44,9 +44,12 @@ const Projects = () => {
                     </strong>
                     <strong>{web.build} </strong>
                   </div>
-                  <button className="p-3 hover:scale-95 duration-200 transition-all bg-red-600 glass text-slate-200 rounded-md font-bold">
-                    <a href={web.link}>Live Demo</a>
-                  </button>
+                  <a
+                    href={web.link}
+                    className="p-3 flex justify-center items-center  hover:scale-95 duration-200 transition-all bg-red-600 glass text-slate-200 rounded-md font-bold"
+                  >
+                    Live Demo
+                  </a>
                 </div>
               </div>
             );
@@ -90,9 +93,12 @@ const Projects = () => {
                     </strong>
                     <strong>{web.build} </strong>
                   </div>
-                  <button className="p-3 hover:scale-95 duration-200 transition-all bg-red-600 glass text-slate-200 rounded-md font-bold">
-                    <a href={web.link}>Live Demo</a>
-                  </button>
+                  <a
+                    href={web.link}
+                    className="p-3 hover:scale-95 flex justify-center items-center duration-200 transition-all bg-red-600 glass text-slate-200 rounded-md font-bold"
+                  >
+                    Live Demo
+                  </a>
                 </div>
               </div>
             );
@@ -140,7 +146,7 @@ const Projects = () => {
                 key={index}
                 className="flex-col flex dark:text-slate-200 text-center justify-center items-center"
               >
-                <div className="flex flex-col gap-2 justify-center items-center my-3">
+                <div className="flex flex-col dark:text-slate-200 text-xl gap-2 justify-center items-center my-3">
                   <h1 className="font-bold">{apps.title}</h1>
                   <strong>{apps.build}</strong>
                 </div>
@@ -165,10 +171,10 @@ const Projects = () => {
                     </a>
                   </button>
                 </div>
-                <div className="flex flex-col gap-3 mt-3 items-center justify-center">
+                <div className="flex  flex-col gap-3 mt-3 items-center justify-center">
                   <a
                     href={apps.repository}
-                    className="flex items-center font-semibold justify-start gap-2"
+                    className="flex items-center dark:text-slate-200 text-xl font-semibold justify-start gap-2"
                   >
                     <FaGithub /> <span className="underline">Repository</span>
                   </a>
