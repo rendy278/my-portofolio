@@ -87,7 +87,7 @@ const Modal = ({ isOpen, onSubmit }) => {
           className="flex flex-col justify-center items-center"
           onSubmit={(e) => e.preventDefault()}
         >
-          <label className="text-gray-500">
+          <label className="text-gray-600">
             Before we begin, please let me know your name.
           </label>
           <input

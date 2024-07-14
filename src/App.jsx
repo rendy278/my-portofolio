@@ -8,6 +8,7 @@ import Skills from "./apps/Skills";
 import Experience from "./apps/Experience";
 import Projects from "./apps/Projects";
 import Contact from "./apps/Contact";
+import Footer from "./components/Footer";
 
 const App = () => {
   const [yourname, setYourname] = useState("");
@@ -38,6 +39,7 @@ const App = () => {
         <Experience />
         <Projects />
         <Contact />
+        <Footer />
       </ThemeProvider>
     </main>
   );

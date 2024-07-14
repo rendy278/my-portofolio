@@ -17,9 +17,9 @@ const UpScrollDown = () => {
 
   return (
     <button
-      className={`fixed bottom-24 md:bottom-4  right-4 text-5xl z-10 rounded-full cursor-pointer transition-opacity duration-300 hover:opacity-80 ${
+      className={`fixed bottom-24 md:bottom-4  right-4 text-5xl z-10 rounded-full cursor-pointer transition-opacity duration-300 hover:opacity-75 ${
         scrollToTop ? "bg-orange-600" : "hidden"
-      } ${isAtBottom ? "bg-red-600 animate-bounce" : ""}`}
+      } ${isAtBottom ? "bg-red-700 animate-bounce " : ""}`}
       onClick={handleScrollToTop}
     >
       <GoMoveToTop className="p-2 text-white" />
