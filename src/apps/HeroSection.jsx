@@ -97,7 +97,7 @@ const HeroSection = ({ yourname }) => {
             </button>
           </div>
         </div>
-        <div className="right md:mb-8">
+        <div className="right md:mb-1">
           <div className="circle w-52 h-52 sm:w-60 sm:h-60 md:w-[18rem] md:h-[18rem] lg:w-[24rem] lg:h-[24rem] border-2 border-yellow-600 ">
             <img
               src={isNightMode ? Me : Sparkle}

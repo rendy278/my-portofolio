@@ -4,8 +4,8 @@ const Footer = () => {
 
   return (
     <footer className="flex glass text-lg justify-center pb-24 font-crete-round md:pb-0  font-bold  items-center flex-wrap bg-red-600 h-full w-full ">
-      <div className="container flex flex-col gap-6 justify-between p-6">
-        <div className=" flex  justify-center gap-8 ">
+      <div className="container flex flex-col md:flex-row gap-6 justify-between p-6">
+        <div className=" flex flex-wrap  justify-center gap-8 ">
           {links.map((menu, index) => (
             <a
               key={index}
