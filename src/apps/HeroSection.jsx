@@ -11,7 +11,7 @@ import { RiScrollToBottomLine } from "react-icons/ri";
 const HeroSection = ({ yourname }) => {
   const { isNightMode } = useTheme();
   return (
-    <section className="relative  w-full md:h-screen flex items-center justify-center">
+    <section className="relative  w-full h-full md:h-screen flex items-center justify-center">
       <div className="container p-6 gap-6 flex flex-col-reverse justify-center  items-center md:flex-row">
         <div className="left font-crete-round dark:text-slate-200  ">
           <h1 className="flex items-center gap-3  lg:text-4xl text-2xl font-bold ">
@@ -97,8 +97,8 @@ const HeroSection = ({ yourname }) => {
             </button>
           </div>
         </div>
-        <div className="right ">
-          <div className="circle w-52 h-52 sm:w-60 sm:h-60 md:w-[18rem] md:h-[18rem] lg:w-[24rem] lg:h-[24rem] border-2 border-yellow-400 ">
+        <div className="right md:mb-8">
+          <div className="circle w-52 h-52 sm:w-60 sm:h-60 md:w-[18rem] md:h-[18rem] lg:w-[24rem] lg:h-[24rem] border-2 border-yellow-600 ">
             <img
               src={isNightMode ? Me : Sparkle}
               alt="profile"

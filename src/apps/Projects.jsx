@@ -148,7 +148,9 @@ const Projects = () => {
               >
                 <div className="flex flex-col dark:text-slate-200 text-xl gap-2 justify-center items-center my-3">
                   <h1 className="font-bold">{apps.title}</h1>
-                  <strong>{apps.build}</strong>
+                  <strong className="bg-slate-200 rounded-md p-2">
+                    {apps.build}
+                  </strong>
                 </div>
 
                 <div className=" border-4 pb-2.5 border-red-500 rounded-xl bg-gray-900">
@@ -161,13 +163,13 @@ const Projects = () => {
                     </div>
                     <img
                       src={apps.image}
-                      alt=""
+                      alt={apps.title}
                       className="w-full h-96 rounded-md"
                     />
                   </div>
                   <button className=" text-sm text-slate-200">
                     <a href={apps.link} className="font-bold">
-                      Live Demo {">>"}
+                      Live Demo
                     </a>
                   </button>
                 </div>
@@ -189,7 +191,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="h-full w-full flex pb-20 md:pb-0 dark:text-slate-200 justify-center items-center"
+      className="h-full w-full flex  dark:text-slate-200 justify-center items-center"
     >
       <div className="container p-6 flex flex-col gap-5 justify-center items-center">
         <div className="title flex gap-3 items-center dark:text-slate-200">
@@ -203,8 +205,10 @@ const Projects = () => {
           This is some of my projects that I have done and currently working on.
         </p>
         <Tabs tabs={projectTabs} />
-        <button className="underline text-lg text-red-500 font-bold dark:text-slate-300 hover:scale-105 duration-200 transition-all">
-          <a href="">Visit more for my projects {">>"}</a>
+        <button className="underline text-xl mt-4 text-gray-700 font-bold dark:text-slate-300 hover:scale-105 duration-200 transition-all">
+          <a href="https://github.com/rendy278">
+            Visit more for my projects {">>"}
+          </a>
         </button>
       </div>
     </section>

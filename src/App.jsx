@@ -7,6 +7,7 @@ import { ThemeProvider } from "./hooks/ThemeContext";
 import Skills from "./apps/Skills";
 import Experience from "./apps/Experience";
 import Projects from "./apps/Projects";
+import Contact from "./apps/Contact";
 
 const App = () => {
   const [yourname, setYourname] = useState("");
@@ -36,6 +37,7 @@ const App = () => {
         <Skills />
         <Experience />
         <Projects />
+        <Contact />
       </ThemeProvider>
     </main>
   );
