@@ -17,7 +17,7 @@ const Contact = () => {
         </h1>
       </div>
       <div className="container gap-5 pb-6 flex flex-col md:flex-row justify-between  items-center">
-        <div className="left w-full md:w-[80%] lg:w-[50%]">
+        <div className="left w-full md:w-[70%] lg:w-[50%]">
           <div className="p-6 w-full  dark:text-gray-700 flex flex-col justify-start items-start gap-3 rounded-md bg-slate-200 shadow-lg shadow-zinc-900 ">
             <img
               src={ContactImg}
