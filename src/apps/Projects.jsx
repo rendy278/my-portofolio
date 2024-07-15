@@ -116,7 +116,7 @@ const Projects = () => {
                 <figure className="bg-base-200 flex justify-center ">
                   <img
                     src={mclearn.image}
-                    alt=""
+                    alt={mclearn.title}
                     className="w-96 md:w-full md:h-80"
                   />
                 </figure>

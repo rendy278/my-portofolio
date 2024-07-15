@@ -8,7 +8,7 @@ const Skills = () => {
       title: "Programming Languages",
       content: (
         <div className="container mx-auto ">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+          <article className="grid grid-cols-2 md:grid-cols-4 gap-3">
             {Programing.map((languages, index) => (
               <figure
                 key={index}
@@ -25,14 +25,14 @@ const Skills = () => {
                 </figcaption>
               </figure>
             ))}
-          </div>
+          </article>
         </div>
       ),
     },
     {
       title: "Framework",
       content: (
-        <div className="container mx-auto ">
+        <article className="container mx-auto ">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
             {Framework.map((fm, index) => (
               <figure
@@ -51,14 +51,14 @@ const Skills = () => {
               </figure>
             ))}
           </div>
-        </div>
+        </article>
       ),
     },
     {
       title: "Tools",
       content: (
         <div className="container mx-auto ">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+          <article className="grid grid-cols-2 md:grid-cols-4 gap-3">
             {Tools.map((tool, index) => (
               <figure
                 key={index}
@@ -74,7 +74,7 @@ const Skills = () => {
                 </div>
               </figure>
             ))}
-          </div>
+          </article>
         </div>
       ),
     },
