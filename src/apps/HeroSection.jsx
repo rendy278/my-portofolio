@@ -5,16 +5,29 @@ import { GrGithub } from "react-icons/gr";
 import { FaLinkedin, FaWhatsapp, FaFacebookSquare } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { useTheme } from "../hooks/ThemeContext";
+import CV from "../assets/Cv Rendy.pdf";
 import Me from "../images/rendy.png";
 import Sparkle from "../images/Sparkle.jpeg";
 import { RiScrollToBottomLine } from "react-icons/ri";
+import Swal from "sweetalert2"; // Import SweetAlert2
+
 const HeroSection = ({ yourname }) => {
   const { isNightMode } = useTheme();
+
+  const handleDownloadCV = () => {
+    Swal.fire({
+      title: "Success!",
+      text: "CV has been downloaded successfully.",
+      icon: "success",
+      confirmButtonText: "OK",
+    });
+  };
+
   return (
-    <section className="relative  w-full h-full md:h-screen flex items-center justify-center">
-      <div className="container p-6 gap-6 flex flex-col-reverse justify-center  items-center md:flex-row">
-        <div className="left font-crete-round dark:text-slate-200  ">
-          <h1 className="flex items-center gap-3  lg:text-4xl text-2xl font-bold ">
+    <section className="relative w-full h-full md:h-screen flex items-center justify-center">
+      <div className="container p-6 gap-6 flex flex-col-reverse justify-center items-center md:flex-row">
+        <div className="left font-crete-round dark:text-slate-200">
+          <h1 className="flex items-center gap-3 lg:text-4xl text-2xl font-bold">
             Hi, <span className="text-red-500 ">{yourname}</span>{" "}
             <span>
               <img
@@ -41,11 +54,11 @@ const HeroSection = ({ yourname }) => {
               />
             </span>
           </h3>
-          <p className="font-semibold font-reddit-sans w-full text-lg md:text-xl md:w-[70%] my-3 ">
+          <p className="font-semibold font-reddit-sans w-full text-lg md:text-xl md:w-[70%] my-3">
             I am a Front End web developer who enjoys building beautiful web
             applications that delivers a better user experience.
           </p>
-          <div className="socials my-4 text-4xl text-slate-100 flex gap-3  justify-start">
+          <div className="socials my-4 text-4xl text-slate-100 flex gap-3 justify-start">
             <a
               href="https://www.instagram.com/rnd_arstls?igsh=bWZiNjNqNmhybGps"
               className="transition-transform hover:shadow-lg hover:scale-105 bg-red-500 rounded-lg"
@@ -88,17 +101,24 @@ const HeroSection = ({ yourname }) => {
             </a>
           </div>
           <div className="flex mt-4 gap-3">
-            <button className="p-3 rounded-md  bg-transparent border dark:border-slate-100 dark:text-slate-200 border-gray-700 text-gray-700 duration-300 transition-all hover:text-slate-100 hover:bg-red-500 font-bold ">
+            <button className="p-3 rounded-md bg-transparent border dark:border-slate-100 dark:text-slate-200 border-gray-700 text-gray-700 duration-300 transition-all hover:text-slate-100 hover:bg-red-500 font-bold">
               <a href="">Contact Me</a>
             </button>
-            <button className="p-2.5 flex justify-center items-center rounded-md text-slate-100 bg-red-500 font-bold ">
-              <IoMdDocument size={20} />
-              Download CV
+            <button className="p-2.5 flex justify-center items-center rounded-md text-slate-100 bg-red-500 font-bold">
+              <a
+                href={CV}
+                onClick={handleDownloadCV}
+                download
+                className="flex items-center justify-center gap-1"
+              >
+                <IoMdDocument size={20} className="mb-1" />
+                Download CV
+              </a>
             </button>
           </div>
         </div>
         <div className="right md:mb-1">
-          <div className="circle w-52 h-52 sm:w-60 sm:h-60 md:w-[18rem] md:h-[18rem] lg:w-[24rem] lg:h-[24rem] border-2 border-yellow-600 ">
+          <div className="circle w-52 h-52 sm:w-60 sm:h-60 md:w-[18rem] md:h-[18rem] lg:w-[24rem] lg:h-[24rem] border-2 border-yellow-600">
             <img
               src={isNightMode ? Me : Sparkle}
               alt="profile"
@@ -107,7 +127,7 @@ const HeroSection = ({ yourname }) => {
           </div>
         </div>
       </div>
-      <div className="scroll text-4xl cursor-pointer absolute hidden  md:flex flex-col  dark:text-white md:bottom-24 lg:bottom-5  justify-center items-center">
+      <div className="scroll text-4xl cursor-pointer absolute hidden md:flex flex-col dark:text-white md:bottom-24 lg:bottom-5 justify-center items-center">
         <RiScrollToBottomLine className="animate-bounce" />
         <p className="text-lg font font-semibold animate-pulse">Scroll Down</p>
       </div>

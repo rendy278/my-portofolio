@@ -31,6 +31,13 @@ const Modal = ({ isOpen, onSubmit }) => {
     }
   };
 
+  const handleNameChange = (e) => {
+    const value = e.target.value;
+    const capitalizedValue =
+      value.charAt(0).toLocaleUpperCase() + value.slice(1);
+    setName(capitalizedValue);
+  };
+
   if (!isOpen) return null;
 
   return (
@@ -93,7 +100,7 @@ const Modal = ({ isOpen, onSubmit }) => {
           <input
             type="text"
             value={name}
-            onChange={(e) => setName(e.target.value)}
+            onChange={handleNameChange}
             placeholder="Insert your name"
             className="w-80 outline-none hover:border-red-500 border-b text-center bg-transparent placeholder:text-center mt-3 p-2 border-gray-700 mb-4"
           />
