@@ -175,6 +175,9 @@ const Contact = () => {
             onSubmit={handleSubmit}
             className="p-6 flex flex-col justify-center items-center gap-3 rounded-md bg-slate-200 shadow-lg shadow-zinc-900"
           >
+            <div className="flex w-full font-crete-round text-3xl md:text-4xl font-bold justify-start items-start p-2">
+              <h1>Lets talk about any questions</h1>
+            </div>
             <div className="flex flex-col gap-3 justify-start items-start w-full md:justify-center md:items-center lg:flex-row">
               <span className="flex flex-col gap-2 w-full">
                 <label htmlFor="name" className="text-lg">

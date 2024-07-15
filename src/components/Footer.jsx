@@ -9,7 +9,7 @@ const Footer = () => {
           {links.map((menu, index) => (
             <a
               key={index}
-              href={`#${menu.link}`}
+              href={menu.link}
               className=" text-white  hover:text-yellow-400 flex justify-center items-center gap-2 cursor-pointer "
             >
               {menu.name}

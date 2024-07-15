@@ -24,7 +24,10 @@ const HeroSection = ({ yourname }) => {
   };
 
   return (
-    <section className="relative w-full h-full md:h-screen flex items-center justify-center">
+    <section
+      id="home"
+      className="relative w-full h-full md:h-screen flex items-center justify-center"
+    >
       <div className="container p-6 gap-6 flex flex-col-reverse justify-center items-center md:flex-row">
         <article className="left font-crete-round dark:text-slate-200">
           <h1 className="flex items-center gap-3 lg:text-4xl text-2xl font-bold">
