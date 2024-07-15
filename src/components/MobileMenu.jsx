@@ -53,7 +53,7 @@ const MobileMenu = () => {
                 >
                   <p>{menu.icon}</p>
                 </span>
-                <span
+                <p
                   className={`${
                     active === i
                       ? "translate-y-6 text-wrap opacity-100 duration-700"
@@ -61,7 +61,7 @@ const MobileMenu = () => {
                   }`}
                 >
                   {menu.name}
-                </span>
+                </p>
               </ScrollLink>
             </li>
           ))}

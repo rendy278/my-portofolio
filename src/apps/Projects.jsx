@@ -19,17 +19,17 @@ const Projects = () => {
                 className="mockup-browser w-72 sm:w-80 lg:w-96 bg-slate-200 dark:border-slate-300 shadow-md shadow-zinc-400 border-gray-600 border"
               >
                 <div className="mockup-browser-toolbar ">
-                  <div className=" input  border-gray-600 border">
+                  <button className=" input  border-gray-600 border">
                     <a href={web.link}>{web.link}</a>
-                  </div>
+                  </button>
                 </div>
-                <div className="border-base-300 flex justify-center border-t ">
+                <figure className="border-base-300 flex justify-center border-t ">
                   <img
                     src={web.image}
                     alt={web.name}
                     className="w-full h-40 md:h-60 object-cover"
                   />
-                </div>
+                </figure>
                 <div className="p-3 flex flex-col gap-2">
                   <div className="title flex flex-wrap justify-between gap-2 items-center w-full">
                     <strong className="text-lg">
@@ -68,17 +68,17 @@ const Projects = () => {
                 className="mockup-browser w-72 sm:w-80 lg:w-96 bg-slate-200 dark:border-slate-300 shadow-md shadow-zinc-400 border-gray-600 border"
               >
                 <div className="mockup-browser-toolbar ">
-                  <div className=" input  border-gray-600 border">
+                  <button className=" input  border-gray-600 border">
                     <a href={web.link}>{web.link}</a>
-                  </div>
+                  </button>
                 </div>
-                <div className="border-base-300 flex justify-center border-t ">
+                <figure className="border-base-300 flex justify-center border-t ">
                   <img
                     src={web.image}
                     alt={web.name}
                     className="w-full h-40 md:h-60 object-cover"
                   />
-                </div>
+                </figure>
                 <div className="p-3 flex flex-col gap-2">
                   <div className="title flex flex-wrap justify-between gap-2 items-center w-full">
                     <strong className="text-lg">
@@ -113,23 +113,25 @@ const Projects = () => {
           {machinelearn.map((mclearn, index) => {
             return (
               <div key={index} className="mockup-window bg-base-300 border">
-                <div className="bg-base-200 flex justify-center ">
+                <figure className="bg-base-200 flex justify-center ">
                   <img
                     src={mclearn.image}
                     alt=""
                     className="w-96 md:w-full md:h-80"
                   />
-                </div>
-                <div className="title p-3 flex justify-between items-center">
-                  <h1 className="font-bold">{mclearn.title}</h1>
-                  <strong>{mclearn.build}</strong>
-                </div>
-                <a
-                  href={mclearn.repository}
-                  className="flex absolute top-3.5 right-4 items-center font-semibold justify-start gap-2"
-                >
-                  <FaGithub /> <span className="underline">Repository</span>
-                </a>
+                </figure>
+                <strong className="title p-3 font-bold flex justify-between items-center">
+                  {mclearn.title}
+                  <span>{mclearn.build}</span>
+                </strong>
+                <button>
+                  <a
+                    href={mclearn.repository}
+                    className="flex absolute top-3.5 right-4 items-center font-semibold justify-start gap-2"
+                  >
+                    <FaGithub /> <span className="underline">Repository</span>
+                  </a>
+                </button>
               </div>
             );
           })}
@@ -146,12 +148,12 @@ const Projects = () => {
                 key={index}
                 className="flex-col flex dark:text-slate-200 text-center justify-center items-center"
               >
-                <div className="flex flex-col dark:text-slate-200 text-xl gap-2 justify-center items-center my-3">
-                  <h1 className="font-bold">{apps.title}</h1>
-                  <strong className="bg-slate-200 rounded-md p-2">
+                <strong className="flex flex-col dark:text-slate-200 text-xl gap-2 justify-center items-center my-3">
+                  {apps.title}
+                  <span className="bg-slate-200 rounded-md p-2">
                     {apps.build}
-                  </strong>
-                </div>
+                  </span>
+                </strong>
 
                 <div className=" border-4 pb-2.5 border-red-500 rounded-xl bg-gray-900">
                   <div className="p-3 relative text-center">
@@ -173,14 +175,14 @@ const Projects = () => {
                     </a>
                   </button>
                 </div>
-                <div className="flex  flex-col gap-3 mt-3 items-center justify-center">
+                <button className="flex  flex-col gap-3 mt-3 items-center justify-center">
                   <a
                     href={apps.repository}
                     className="flex items-center dark:text-slate-200 text-xl font-semibold justify-start gap-2"
                   >
                     <FaGithub /> <span className="underline">Repository</span>
                   </a>
-                </div>
+                </button>
               </div>
             );
           })}

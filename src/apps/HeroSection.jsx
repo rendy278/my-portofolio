@@ -102,7 +102,13 @@ const HeroSection = ({ yourname }) => {
           </div>
           <div className="flex mt-4 gap-3">
             <button className="p-3 rounded-md bg-transparent border dark:border-slate-100 dark:text-slate-200 border-gray-700 text-gray-700 duration-300 transition-all hover:text-slate-100 hover:bg-red-500 font-bold">
-              <a href="">Contact Me</a>
+              <a
+                href="https://wa.me/6283122895534"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Contact Me
+              </a>
             </button>
             <button className="p-2.5 flex justify-center items-center rounded-md text-slate-100 bg-red-500 font-bold">
               <a
@@ -118,13 +124,13 @@ const HeroSection = ({ yourname }) => {
           </div>
         </div>
         <div className="right md:mb-1">
-          <div className="circle w-52 h-52 sm:w-60 sm:h-60 md:w-[18rem] md:h-[18rem] lg:w-[24rem] lg:h-[24rem] border-2 border-yellow-600">
+          <figure className="circle w-52 h-52 sm:w-60 sm:h-60 md:w-[18rem] md:h-[18rem] lg:w-[24rem] lg:h-[24rem] border-2 border-yellow-600">
             <img
               src={isNightMode ? Me : Sparkle}
               alt="profile"
               className="h-60 md:h-72 lg:h-96 dark:h-fit"
             />
-          </div>
+          </figure>
         </div>
       </div>
       <div className="scroll text-4xl cursor-pointer absolute hidden md:flex flex-col dark:text-white md:bottom-24 lg:bottom-5 justify-center items-center">

@@ -31,7 +31,7 @@ const Navbar = () => {
         className="static md:fixed w-full z-[99999]"
       >
         <nav className="navbar text-slate-100 font-reddit-sans justify-centers glass px-4 md:justify-between bg-red-600 shadow-yellow-600 shadow-md">
-          <div className="navbar-start font-bold text-xl">
+          <strong className="navbar-start font-bold text-xl">
             <ScrollLink
               to="home"
               smooth={true}
@@ -41,7 +41,7 @@ const Navbar = () => {
               <span className="text-yellow-400">{"<"}</span> Rendev{" "}
               <span className="text-yellow-400">{"/>"}</span>
             </ScrollLink>
-          </div>
+          </strong>
           <div className="font-bold text-lg hidden md:flex justify-between w-full">
             <ul className="flex justify-center gap-x-4 lg:gap-x-8 items-center w-full">
               {links.map((menu, i) => (

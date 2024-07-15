@@ -42,37 +42,20 @@ const Modal = ({ isOpen, onSubmit }) => {
 
   return (
     <motion.div
-      className="fixed inset-0 z-[999999] p-6 w-full flex items-center justify-center bg-white"
+      className="fixed inset-0 glass z-[999999] p-6 w-full flex items-center justify-center bg-slate-100"
       initial={{ y: 0 }}
       animate={submitted ? { y: "-100vh" } : { y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <motion.ul
-        className="circles"
-        initial={{ opacity: 1, y: 0 }}
-        animate={submitted ? { opacity: 0, y: "-100vh" } : { y: 0 }}
-        transition={{ duration: 0.5 }}
-      >
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </motion.ul>
       <motion.div
         className="max-w-4xl mx-auto text-center"
         initial={{ y: 0 }}
         animate={submitted ? { y: "-100vh" } : { y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <h2 className="md:text-5xl text-gray-600 text-3xl font-bold mb-4">
+        <h1 className="md:text-5xl text-gray-600 text-3xl font-bold mb-4">
           Hello, I{"'"}m Rendy
-        </h2>
+        </h1>
         <strong className="lg:text-4xl text-2xl font-montserrat font-bold text-red-500 ">
           <Typewriter
             words={["Welcome To My Portofolio"]}

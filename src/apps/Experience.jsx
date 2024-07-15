@@ -32,7 +32,7 @@ const Experience = () => {
                     <p className="text-xs md:text-sm"> {cert.des}</p>
                     <div className="card-actions justify-end">
                       <button className="p-2 bg-red-500 font-bold text-white rounded-md">
-                        Download
+                        <a href={cert.link}>Download</a>
                       </button>
                     </div>
                   </div>

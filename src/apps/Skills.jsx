@@ -10,7 +10,7 @@ const Skills = () => {
         <div className="container mx-auto ">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
             {Programing.map((languages, index) => (
-              <div
+              <figure
                 key={index}
                 className="flex flex-col items-center bg-white text-center dark:bg-slate-100 dark:text-gray-700 rotate-2 border-2 border-slate-400 dark:border-gray-500  shadow-xl rounded-lg p-2 hover:rotate-0 duration-300 transition-all"
               >
@@ -20,10 +20,10 @@ const Skills = () => {
                   alt={languages.title}
                   className="w-16 h-16 object-cover rounded-md"
                 />
-                <h1 className="text-lg font-semibold mt-4">
+                <figcaption className="text-lg font-semibold mt-4">
                   {languages.level}
-                </h1>
-              </div>
+                </figcaption>
+              </figure>
             ))}
           </div>
         </div>
@@ -35,7 +35,7 @@ const Skills = () => {
         <div className="container mx-auto ">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
             {Framework.map((fm, index) => (
-              <div
+              <figure
                 key={index}
                 className="flex flex-col items-center bg-white text-center dark:bg-slate-100 dark:text-gray-700 rotate-2 border-2 border-slate-400 dark:border-gray-500  shadow-xl rounded-lg p-2 hover:rotate-0 duration-300 transition-all"
               >
@@ -45,8 +45,10 @@ const Skills = () => {
                   alt={fm.title}
                   className="w-16 h-16 object-cover rounded-md"
                 />
-                <h1 className="text-lg font-semibold mt-4">{fm.level}</h1>
-              </div>
+                <figcaption className="text-lg font-semibold mt-4">
+                  {fm.level}
+                </figcaption>
+              </figure>
             ))}
           </div>
         </div>
@@ -58,7 +60,7 @@ const Skills = () => {
         <div className="container mx-auto ">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
             {Tools.map((tool, index) => (
-              <div
+              <figure
                 key={index}
                 className="flex flex-col items-center bg-white dark:bg-slate-100 dark:text-gray-700  shadow-xl rotate-2 border-2 border-slate-400 dark:border-gray-500 rounded-lg p-4 hover:rotate-0 duration-300 transition-all"
               >
@@ -70,7 +72,7 @@ const Skills = () => {
                     className="w-20 h-20 object-cover rounded-md"
                   />
                 </div>
-              </div>
+              </figure>
             ))}
           </div>
         </div>
