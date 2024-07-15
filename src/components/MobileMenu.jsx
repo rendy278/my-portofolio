@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { Link as ScrollLink } from "react-scroll";
 import { links } from "../constant/links";
 import UpScrollDown from "./UpScrollDown";
 
@@ -39,10 +38,8 @@ const MobileMenu = () => {
               key={i}
               className="w-[4.9rem] flex mx-auto justify-center items-center"
             >
-              <ScrollLink
-                to={menu.link.replace("#", "")}
-                smooth={true}
-                duration={500}
+              <a
+                href={menu.link}
                 className="flex flex-col font-semibold text-slate-100 justify-center items-center text-wrap pt-6 cursor-pointer"
                 onClick={() => setActive(i)}
               >
@@ -62,7 +59,7 @@ const MobileMenu = () => {
                 >
                   {menu.name}
                 </p>
-              </ScrollLink>
+              </a>
             </li>
           ))}
         </ul>

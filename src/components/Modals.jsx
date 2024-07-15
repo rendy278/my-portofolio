@@ -7,7 +7,6 @@ const nameSchema = z.string().min(4);
 
 const Modal = ({ isOpen, onSubmit }) => {
   const [name, setName] = useState("");
-  const [error, setError] = useState("");
   const [submitted, setSubmitted] = useState(false);
 
   useEffect(() => {
@@ -26,8 +25,6 @@ const Modal = ({ isOpen, onSubmit }) => {
       setTimeout(() => {
         onSubmit(name);
       }, 1000);
-    } else {
-      setError(result.error.errors[0].message);
     }
   };
 
@@ -102,7 +99,6 @@ const Modal = ({ isOpen, onSubmit }) => {
               </motion.button>
             )}
           </AnimatePresence>
-          {error && <p className="text-red-500">{error}</p>}
         </form>
       </motion.div>
     </motion.article>

@@ -11,7 +11,7 @@ function Timeline() {
             <figure className="flex justify-center items-center text-white rounded-full w-16 h-16 md:w-20 md:h-20 bg-slate-200 border-2 md:border-4 border-red-500">
               <img
                 src={item.images}
-                className="w-10 h-10 md:w-12 h:h-12"
+                className="w-10 h-10 md:w-12 md:h-12 object-cover "
                 alt={item.title}
               />
             </figure>

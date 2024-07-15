@@ -6,25 +6,25 @@ import { RiContactsFill } from "react-icons/ri";
 export const links = [
   {
     name: "Home",
-    link: "home",
+    link: "#home",
     dis: "translate-x-[8px]",
     icon: <IoHomeSharp size={25} />,
   },
   {
     name: "About",
-    link: "about",
+    link: "#about",
     dis: "translate-x-[86px]",
     icon: <BsFillPersonFill size={25} />,
   },
   {
     name: "Projects",
-    link: "projects",
+    link: "#projects",
     dis: "translate-x-[165px]",
     icon: <AiFillProject size={25} />,
   },
   {
     name: "Contact",
-    link: "contact",
+    link: "#contact",
     dis: "translate-x-[244px]",
     icon: <RiContactsFill size={25} />,
   },
