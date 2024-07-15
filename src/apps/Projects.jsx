@@ -26,7 +26,7 @@ const Projects = () => {
                 <figure className="border-base-300 flex justify-center border-t ">
                   <img
                     src={web.image}
-                    alt={web.name}
+                    alt={web.title}
                     className="w-full h-40 md:h-60 object-cover"
                   />
                 </figure>
@@ -75,7 +75,7 @@ const Projects = () => {
                 <figure className="border-base-300 flex justify-center border-t ">
                   <img
                     src={web.image}
-                    alt={web.name}
+                    alt={web.title}
                     className="w-full h-40 md:h-60 object-cover"
                   />
                 </figure>
