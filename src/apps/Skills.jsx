@@ -83,13 +83,13 @@ const Skills = () => {
   return (
     <section className="md:h-screen  h-full  flex justify-center items-center dark:text-slate-200">
       <div className="w-full px-6 md:px-6 py-5 gap-5 flex flex-col lg:flex-row justify-between items-center">
-        <div className="left flex flex-col gap-3 md:gap-6 lg:gap-6 w-full">
+        <article className="left flex flex-col gap-3 md:gap-6 lg:gap-6 w-full">
           <Title title="Tech Stack" />
           <Tabs tabs={tabs} />
-        </div>
-        <div className="lg:w-[50%] w-full ">
+        </article>
+        <article className="lg:w-[50%] w-full ">
           <Github />
-        </div>
+        </article>
       </div>
     </section>
   );

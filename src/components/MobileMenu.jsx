@@ -25,7 +25,7 @@ const MobileMenu = () => {
   return (
     <>
       <UpScrollDown />
-      <div
+      <nav
         className={`lg:hidden md:hidden opacity-0 duration-200 transition-all navbar pb-1.5 z-50 justify-center left-0 right-0 fixed bottom-0 rounded-t-xl bg-red-500 ${
           scroll ? "opacity-100" : ""
         }`}
@@ -66,7 +66,7 @@ const MobileMenu = () => {
             </li>
           ))}
         </ul>
-      </div>
+      </nav>
     </>
   );
 };

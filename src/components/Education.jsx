@@ -6,7 +6,7 @@ function Timeline() {
     <div className="text-lg md:text-xl">
       <Title title="Education" />
       {edutimeline.map((item, index) => (
-        <div key={"W" + index} className="flex">
+        <article key={"W" + index} className="flex">
           <div className="mt-5">
             <div className="flex justify-center items-center text-white rounded-full w-16 h-16 md:w-20 md:h-20 bg-slate-200 border-2 md:border-4 border-red-500">
               <img src={item.images} className="w-10 h-10" alt="" />
@@ -29,7 +29,7 @@ function Timeline() {
             </strong>
             <p className=" font-reddit-sans">{item.des}</p>
           </div>
-        </div>
+        </article>
       ))}
     </div>
   );

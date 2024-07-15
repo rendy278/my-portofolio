@@ -26,7 +26,7 @@ const HeroSection = ({ yourname }) => {
   return (
     <section className="relative w-full h-full md:h-screen flex items-center justify-center">
       <div className="container p-6 gap-6 flex flex-col-reverse justify-center items-center md:flex-row">
-        <div className="left font-crete-round dark:text-slate-200">
+        <article className="left font-crete-round dark:text-slate-200">
           <h1 className="flex items-center gap-3 lg:text-4xl text-2xl font-bold">
             Hi, <span className="text-red-500 ">{yourname}</span>{" "}
             <span>
@@ -122,8 +122,8 @@ const HeroSection = ({ yourname }) => {
               </a>
             </button>
           </div>
-        </div>
-        <div className="right md:mb-1">
+        </article>
+        <article className="right md:mb-1">
           <figure className="circle w-52 h-52 sm:w-60 sm:h-60 md:w-[18rem] md:h-[18rem] lg:w-[24rem] lg:h-[24rem] border-2 border-yellow-600">
             <img
               src={isNightMode ? Me : Sparkle}
@@ -131,7 +131,7 @@ const HeroSection = ({ yourname }) => {
               className="h-60 md:h-72 lg:h-96 dark:h-fit"
             />
           </figure>
-        </div>
+        </article>
       </div>
       <div className="scroll text-4xl cursor-pointer absolute hidden md:flex flex-col dark:text-white md:bottom-24 lg:bottom-5 justify-center items-center">
         <RiScrollToBottomLine className="animate-bounce" />

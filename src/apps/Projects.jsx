@@ -14,7 +14,7 @@ const Projects = () => {
         <div className="flex flex-wrap w-full font-reddit-sans  justify-center items-center  gap-3 dark:text-gray-700 mx-auto">
           {webproject.map((web, index) => {
             return (
-              <div
+              <article
                 key={index}
                 className="mockup-browser w-72 sm:w-80 lg:w-96 bg-slate-200 dark:border-slate-300 shadow-md shadow-zinc-400 border-gray-600 border"
               >
@@ -51,7 +51,7 @@ const Projects = () => {
                     Live Demo
                   </a>
                 </div>
-              </div>
+              </article>
             );
           })}
         </div>
@@ -63,7 +63,7 @@ const Projects = () => {
         <div className="flex flex-wrap w-full font-reddit-sans  justify-center items-center  gap-3 dark:text-gray-700 mx-auto">
           {gameproject.map((web, index) => {
             return (
-              <div
+              <article
                 key={index}
                 className="mockup-browser w-72 sm:w-80 lg:w-96 bg-slate-200 dark:border-slate-300 shadow-md shadow-zinc-400 border-gray-600 border"
               >
@@ -100,7 +100,7 @@ const Projects = () => {
                     Live Demo
                   </a>
                 </div>
-              </div>
+              </article>
             );
           })}
         </div>
@@ -112,7 +112,7 @@ const Projects = () => {
         <div className="flex flex-wrap w-full font-reddit-sans  justify-center items-center  gap-3 dark:text-gray-700 mx-auto">
           {machinelearn.map((mclearn, index) => {
             return (
-              <div key={index} className="mockup-window bg-base-300 border">
+              <article key={index} className="mockup-window bg-base-300 border">
                 <figure className="bg-base-200 flex justify-center ">
                   <img
                     src={mclearn.image}
@@ -132,7 +132,7 @@ const Projects = () => {
                     <FaGithub /> <span className="underline">Repository</span>
                   </a>
                 </button>
-              </div>
+              </article>
             );
           })}
         </div>
@@ -144,7 +144,7 @@ const Projects = () => {
         <div className="flex flex-wrap w-full font-reddit-sans  justify-center items-center  gap-3 dark:text-gray-700 mx-auto">
           {webapp.map((apps, index) => {
             return (
-              <div
+              <article
                 key={index}
                 className="flex-col flex dark:text-slate-200 text-center justify-center items-center"
               >
@@ -183,7 +183,7 @@ const Projects = () => {
                     <FaGithub /> <span className="underline">Repository</span>
                   </a>
                 </button>
-              </div>
+              </article>
             );
           })}
         </div>

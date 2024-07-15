@@ -41,7 +41,7 @@ const Modal = ({ isOpen, onSubmit }) => {
   if (!isOpen) return null;
 
   return (
-    <motion.div
+    <motion.article
       className="fixed inset-0 glass z-[999999] p-6 w-full flex items-center justify-center bg-slate-100"
       initial={{ y: 0 }}
       animate={submitted ? { y: "-100vh" } : { y: 0 }}
@@ -105,7 +105,7 @@ const Modal = ({ isOpen, onSubmit }) => {
           {error && <p className="text-red-500">{error}</p>}
         </form>
       </motion.div>
-    </motion.div>
+    </motion.article>
   );
 };
 

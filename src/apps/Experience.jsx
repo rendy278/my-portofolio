@@ -11,7 +11,7 @@ const Experience = () => {
   return (
     <section className="md:h-screen h-full w-full flex justify-center items-center">
       <div className="container gap-6 px-3 sm:px-4 md:px-6 py-5 flex flex-col lg:flex-row justify-between items-center">
-        <div className="left w-full">
+        <article className="left w-full">
           <Title title="Certificates" />
           <Swiper
             effect={"cards"}
@@ -40,8 +40,8 @@ const Experience = () => {
               </SwiperSlide>
             ))}
           </Swiper>
-        </div>
-        <div className="right text-lg md:text-xl">
+        </article>
+        <article className="right text-lg md:text-xl">
           <Title title="Experience" />
           {exptimeline.map((item, index) => (
             <div key={index} className="flex  dark:text-slate-200">
@@ -69,7 +69,7 @@ const Experience = () => {
               </div>
             </div>
           ))}
-        </div>
+        </article>
       </div>
     </section>
   );

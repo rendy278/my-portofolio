@@ -14,7 +14,7 @@ const Github = () => {
   };
 
   return (
-    <section className="flex flex-col mt-3 gap-5 p-6 ">
+    <div className="flex flex-col mt-3 gap-5 p-6 ">
       <Title title="Days Code" />
       <GitHubCalendar
         username="rendy278"
@@ -28,7 +28,7 @@ const Github = () => {
         }}
         showWeekdayLabels={true}
       />
-    </section>
+    </div>
   );
 };
 

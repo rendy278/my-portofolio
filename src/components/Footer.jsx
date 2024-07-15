@@ -16,9 +16,9 @@ const Footer = () => {
             </a>
           ))}
         </div>
-        <div className="text-center hover:text-yellow-400 flex justify-center items-center gap-2 cursor-pointer text-white">
+        <strong className="text-center hover:text-yellow-400 flex justify-center items-center gap-2 cursor-pointer text-white">
           &copy; {currentYear} Rendev. All rights reserved.
-        </div>
+        </strong>
       </div>
     </footer>
   );

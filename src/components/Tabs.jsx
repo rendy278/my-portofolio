@@ -23,12 +23,12 @@ const Tabs = ({ tabs }) => {
       </div>
       <div className="mt-3">
         {tabs.map((tab, index) => (
-          <div
+          <article
             key={index}
             className={`${activeTab === index ? "block" : "hidden"}`}
           >
             {tab.content}
-          </div>
+          </article>
         ))}
       </div>
     </div>
