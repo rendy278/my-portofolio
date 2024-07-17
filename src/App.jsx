@@ -29,7 +29,7 @@ const App = () => {
   };
 
   return (
-    <main>
+    <main id="home">
       <ThemeProvider>
         <Modal isOpen={isModalOpen} onSubmit={handleNameSubmit} />
         <Header />

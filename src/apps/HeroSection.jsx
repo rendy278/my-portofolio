@@ -9,7 +9,7 @@ import CV from "../assets/Cv Rendy.pdf";
 import Me from "../images/rendy.png";
 import Sparkle from "../images/Sparkle.jpeg";
 import { RiScrollToBottomLine } from "react-icons/ri";
-import Swal from "sweetalert2"; // Import SweetAlert2
+import Swal from "sweetalert2"; 
 
 const HeroSection = ({ yourname }) => {
   const { isNightMode } = useTheme();
@@ -25,7 +25,6 @@ const HeroSection = ({ yourname }) => {
 
   return (
     <section
-      id="home"
       className="relative w-full h-full md:h-screen flex items-center justify-center"
     >
       <div className="container p-6 gap-6 flex flex-col-reverse justify-center items-center md:flex-row">
