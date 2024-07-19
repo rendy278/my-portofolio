@@ -10,6 +10,14 @@
   scrollbar-color: color-mix(in oklch, #d04848 95%, transparent) #eaeaea !important;
 }
 
+.pointer {
+  cursor: url("./images/linkmouse.png"), pointer;
+}
+
+a {
+  cursor: url("./images/linkmouse.png"), pointer;
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;

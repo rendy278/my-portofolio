@@ -83,7 +83,7 @@ const Projects = () => {
           <div className="flex mt-4 justify-center items-center w-full">
             {webProjectsCount < webproject.length && (
               <button
-                className="p-3 w-60 font-bold mt-4 bg-red-600 text-white rounded"
+                className="p-3 w-60 font-bold mt-4 pointer bg-red-600 text-white rounded"
                 onClick={() => handleViewMore("web")}
               >
                 View More
@@ -142,7 +142,7 @@ const Projects = () => {
           <div className="flex justify-center items-center w-full">
             {gameProjectsCount < gameproject.length && (
               <button
-                className="p-3 w-60 font-bold mt-4 bg-red-600 text-white rounded"
+                className="p-3 w-60 pointer font-bold mt-4 bg-red-600 text-white rounded"
                 onClick={() => handleViewMore("game")}
               >
                 View More
@@ -184,7 +184,7 @@ const Projects = () => {
           <div className="flex-justify-center items-center w-full">
             {mlProjectsCount < machinelearn.length && (
               <button
-                className="p-3 w-60 font-bold mt-4 bg-red-600 text-white rounded"
+                className="p-3 w-60 pointer font-bold mt-4 bg-red-600 text-white rounded"
                 onClick={() => handleViewMore("ml")}
               >
                 View More
@@ -244,7 +244,7 @@ const Projects = () => {
           <div className="flex justify-center items-center w-full">
             {webAppsCount < webapp.length && (
               <button
-                className="p-3 w-60 font-bold mt-4 bg-red-600 text-white rounded"
+                className="p-3 w-60 pointer font-bold mt-4 bg-red-600 text-white rounded"
                 onClick={() => handleViewMore("app")}
               >
                 View More

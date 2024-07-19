@@ -42,7 +42,7 @@ const Navbar = () => {
                 <li key={i} className="line">
                   <a
                     href={menu.link}
-                    className="hover:text-yellow-400 flex justify-center items-center gap-2 cursor-pointer"
+                    className="hover:text-yellow-400 flex justify-center items-center gap-2 pointer"
                   >
                     <span>{menu.icon}</span>
                     {menu.name}
@@ -55,7 +55,7 @@ const Navbar = () => {
             <NightMode />
             <button
               onClick={handleShare}
-              className="flex items-center justify-center p-2 bg-slate-100 text-red-600 dark:text-yellow-200 rounded-lg dark:bg-gray-700"
+              className="flex items-center pointer justify-center p-2 bg-slate-100 text-red-600 dark:text-yellow-200 rounded-lg dark:bg-gray-700"
             >
               <FaProjectDiagram />
             </button>

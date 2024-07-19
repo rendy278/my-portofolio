@@ -9,7 +9,7 @@ import CV from "../assets/Cv Rendy.pdf";
 import Me from "../images/rendy.png";
 import Sparkle from "../images/Sparkle.jpeg";
 import { RiScrollToBottomLine } from "react-icons/ri";
-import Swal from "sweetalert2"; 
+import Swal from "sweetalert2";
 
 const HeroSection = ({ yourname }) => {
   const { isNightMode } = useTheme();
@@ -24,9 +24,7 @@ const HeroSection = ({ yourname }) => {
   };
 
   return (
-    <section
-      className="relative w-full h-full md:h-screen flex items-center justify-center"
-    >
+    <section className="relative w-full h-full md:h-screen flex items-center justify-center">
       <div className="container p-6 gap-6 flex flex-col-reverse justify-center items-center md:flex-row">
         <article className="left font-crete-round dark:text-slate-200">
           <h1 className="flex items-center gap-3 lg:text-4xl text-2xl font-bold">
@@ -103,7 +101,7 @@ const HeroSection = ({ yourname }) => {
             </a>
           </div>
           <div className="flex mt-4 gap-3">
-            <button className="p-3 rounded-md bg-transparent border dark:border-slate-100 dark:text-slate-200 border-gray-700 text-gray-700 duration-300 transition-all hover:text-slate-100 hover:bg-red-500 font-bold">
+            <button className="p-3 pointer rounded-md bg-transparent border  dark:border-slate-100 dark:text-slate-200 border-gray-700 text-gray-700 duration-300 transition-all hover:text-slate-100 hover:bg-red-500 font-bold">
               <a
                 href="https://wa.me/6283122895534"
                 target="_blank"
@@ -112,7 +110,7 @@ const HeroSection = ({ yourname }) => {
                 Contact Me
               </a>
             </button>
-            <button className="p-2.5 flex justify-center items-center rounded-md text-slate-100 bg-red-500 font-bold">
+            <button className="p-2.5  pointer flex justify-center items-center rounded-md text-slate-100 bg-red-500 font-bold">
               <a
                 href={CV}
                 onClick={handleDownloadCV}
@@ -135,7 +133,7 @@ const HeroSection = ({ yourname }) => {
           </figure>
         </article>
       </div>
-      <div className="scroll text-4xl cursor-pointer absolute hidden md:flex flex-col dark:text-white md:bottom-24 lg:bottom-5 justify-center items-center">
+      <div className="scroll text-4xl  absolute hidden md:flex flex-col dark:text-white md:bottom-24 lg:bottom-5 justify-center items-center">
         <RiScrollToBottomLine className="animate-bounce" />
         <p className="text-lg font font-semibold animate-pulse">Scroll Down</p>
       </div>

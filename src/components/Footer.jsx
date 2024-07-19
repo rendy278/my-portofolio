@@ -10,7 +10,7 @@ const Footer = () => {
             <a
               key={index}
               href={menu.link}
-              className=" text-white  hover:text-yellow-400 flex justify-center items-center gap-2 cursor-pointer "
+              className=" text-white  hover:text-yellow-400 flex justify-center items-center gap-2 pointer "
             >
               {menu.name}
             </a>

@@ -277,7 +277,7 @@ const Contact = () => {
               )}
               <button
                 type="submit"
-                className="p-3 bg-red-500 font-bold text-white rounded-md"
+                className="p-3 pointer bg-red-500 font-bold text-white rounded-md"
               >
                 Submit
               </button>
