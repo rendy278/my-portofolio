@@ -5,7 +5,6 @@
 @tailwind utilities;
 
 * {
-  scroll-behavior: smooth;
   cursor: url("./images/mousegenshin.png"), auto;
   scrollbar-color: color-mix(in oklch, #d04848 95%, transparent) #eaeaea !important;
 }
