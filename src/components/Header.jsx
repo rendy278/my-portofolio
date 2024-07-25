@@ -39,10 +39,10 @@ const Navbar = () => {
           <div className="font-bold text-lg hidden md:flex justify-between w-full">
             <ul className="flex justify-center gap-x-4 lg:gap-x-8 items-center w-full">
               {links.map((menu, i) => (
-                <li key={i} className="line">
+                <li key={i} className="line flex">
                   <a
                     href={menu.link}
-                    className="hover:text-yellow-400 flex justify-center items-center gap-2 pointer"
+                    className="hover:text-yellow-400 text-xl pointer flex justify-center items-center gap-2 "
                   >
                     <span>{menu.icon}</span>
                     {menu.name}

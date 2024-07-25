@@ -6,7 +6,7 @@ import { RiContactsFill } from "react-icons/ri";
 export const links = [
   {
     name: "Home",
-    link: "#home",
+    link: "#",
     dis: "translate-x-[8px]",
     icon: <IoHomeSharp size={25} />,
   },
