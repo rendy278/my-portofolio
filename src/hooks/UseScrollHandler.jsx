@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+
 const UseScrollHandler = () => {
   const [scrollToTop, setScrollToTop] = useState(false);
   const [isAtBottom, setIsAtBottom] = useState(false);
