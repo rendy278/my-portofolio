@@ -1,13 +1,10 @@
 import { useState, useEffect } from "react";
+
 const UseScrollHandler = () => {
-  const [scrollToTop, setScrollToTop] = useState(false);
   const [isAtBottom, setIsAtBottom] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      const isScrolled = window.pageYOffset > 0;
-      setScrollToTop(isScrolled);
-
       const scrollTop =
         window.pageYOffset || document.documentElement.scrollTop;
       const scrollHeight = document.documentElement.scrollHeight;
@@ -22,7 +19,7 @@ const UseScrollHandler = () => {
     };
   }, []);
 
-  return { scrollToTop, isAtBottom };
+  return { isAtBottom };
 };
 
 export default UseScrollHandler;
